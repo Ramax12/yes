@@ -1,0 +1,29 @@
+.btn {
+  background-color: @colorSecond;
+  display: inline-block;
+  font-family: @fontFamilyBrandBold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: .7px;
+  text-decoration: none;
+  padding: 18px 27px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 8px 25px -5px @colorSecond;
+  opacity: 1;
+}
+.btn:active {
+  opacity: .7;
+}
+@media (min-width: @desktopWidth) {
+.btn {
+  padding: 22px 35px;
+  font-size: 18px;
+}
+}

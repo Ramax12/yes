@@ -1,0 +1,312 @@
+.catalog {
+  position: relative;
+  text-align: center;
+  padding: 0 @lateralEdgeMobile;
+  margin-bottom: 60px;
+
+  &::before {
+    background-repeat: no-repeat;
+    background-size: 267px;
+    position: absolute;
+    top: -420px;
+    left: 50%;
+    z-index: 2;
+    width: 267px;
+    height: 384px;
+    content: "";
+    margin-left: -160px;
+  }
+}
+.catalog__wave-icon {
+  position: absolute;
+  top: -195px;
+  right: 10%;
+  z-index: 3;
+}
+.catalog__circle-1 {
+  position: absolute;
+  top: -330px;
+  left: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border: 40px solid #f5f5f5;
+  border-radius: 130px;
+  margin-left: -115px;
+}
+.catalog__circle-2 {
+  position: absolute;
+  top: -360px;
+  left: 20%;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  border: 11px solid #2429ff;
+  border-radius: 50px;
+}
+.catalog__title {
+  margin-bottom: 10px;
+
+  &::after {
+    margin: 0 auto;
+    .underline
+  }
+}
+.catalog__cost {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 28px;
+  color: @colorSecond;
+  margin-bottom: 10px;
+}
+.catalog__subtitle {
+  max-width: 570px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.catalog__list {
+  padding: 0;
+  margin: 0;
+}
+.catalog__item {
+  list-style: none;
+  margin-bottom: 25px;
+}
+.catalog__name {
+  font-family: @fontFamilyBrandBold;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.catalog__content {
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (max-width: @mobileMaxWidth) {
+.catalog {
+
+  &::before {
+    background-image: url("../img/bigben-mobile@1x.png");
+  }
+}
+}
+@media (max-width: @mobileMaxWidth) and (min-resolution:144dpi),
+(max-width: @mobileMaxWidth) and (min-resolution:1.5dppx) {
+.catalog {
+
+  &::before {
+    background-image: url("../img/bigben-mobile@2x.png");
+  }
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.catalog {
+  text-align: left;
+  padding: 0 @lateralEdgeTablet;
+  margin-bottom: 175px;
+  margin-left: 125px;
+
+  &::before {
+    background-image: url("../img/bigben-tablet@1x.png");
+    background-size: 612px;
+    left: -205px;
+    top: -30px;
+    width: 612px;
+    height: 881px;
+  }
+}
+.catalog__wave-icon {
+  top: 585px;
+  right: auto;
+  left: 115px;
+}
+.catalog__circle-1 {
+  top: 180px;
+  left: -150px;
+  width: 340px;
+  height: 340px;
+  border: 90px solid #f5f5f5;
+  border-radius: 300px
+}
+.catalog__circle-2 {
+  top: 115px;
+  left: -215px;
+  width: 90px;
+  height: 90px;
+  border: 25px solid #2429ff;
+  border-radius: 80px;
+}
+.catalog__title {
+  margin-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    z-index: -1;
+    width: 95px;
+    height: 150px;
+    font-family: @fontFamilyBrandBold;
+    font-size: 200px;
+    color: #e9e9e9;
+    margin-left: 70px;
+    content: "?";
+  }
+
+  &::after {
+    padding-top: 10px;
+    margin: 0;
+  }
+}
+.catalog__cost {
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  margin-bottom: 30px;
+}
+.catalog__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+.catalog__list {
+  width: 600px;
+}
+.catalog__item {
+  width: 283px;
+  margin-bottom: 8px;
+}
+.catalog__item:nth-child(-n+4) {
+  float: left;
+  margin-right: 25px;
+}
+.catalog__item:nth-child(n+5) {
+  display: inline-block;
+}
+.catalog__item:nth-child(3),
+.catalog__item:nth-child(6) {
+  margin-bottom: 34px;
+}
+.catalog__name {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.catalog__content {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+}
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:144dpi),
+(min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) and (min-resolution:1.5dppx) {
+.catalog {
+
+  &::before {
+    background-image: url("../img/bigben-tablet@2x.png");
+  }
+}
+}
+@media (min-width: @tabletMinWidth) {
+.catalog__wave-icon {
+  width: 145px;
+  height: 22px;
+}
+}
+@media (min-width: @desktopWidth) {
+.catalog {
+  text-align: left;
+  padding: 0 @lateralEdgeDesktop;
+  margin-left: 380px;
+  margin-bottom: 170px;
+
+  &::before {
+    background-image: url("../img/bigben-desktop@1x.png");
+    background-size: 749px;
+    left: -245px;
+    top: -132px;
+    width: 749px;
+    height: 1078px;
+  }
+}
+.catalog__wave-icon {
+  top: 605px;
+  right: auto;
+  left: 195px;
+}
+.catalog__circle-1 {
+  top: 120px;
+  left: -150px;
+  width: 405px;
+  height: 405px;
+  border: 110px solid #f5f5f5;
+  border-radius: 300px
+}
+.catalog__circle-2 {
+  top: 40px;
+  left: -215px;
+  width: 110px;
+  height: 110px;
+  border: 30px solid #2429ff;
+  border-radius: 80px;
+}
+.catalog__title {
+  margin-bottom: 40px;
+
+  &::after {
+    padding-top: 20px;
+    margin: 0;
+  }
+}
+.catalog__cost {
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.catalog__subtitle {
+  min-width: 630px;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.catalog__list {
+  width: 750px;
+}
+.catalog__item {
+  width: 330px;
+  margin-bottom: 8px;
+}
+.catalog__item:nth-child(-n+4) {
+  float: left;
+  margin-right: 56px;
+}
+.catalog__item:nth-child(n+5) {
+  display: inline-block;
+}
+.catalog__name {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+.catalog__content {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0;
+}
+}
+@media (min-width: @desktopWidth) and (min-resolution:144dpi),
+(min-width: @desktopWidth) and (min-resolution:1.5dppx) {
+.catalog {
+
+  &::before {
+    background-image: url("../img/bigben-desktop@2x.png");
+  }
+}
+}

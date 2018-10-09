@@ -1,0 +1,162 @@
+.lecturers {
+  padding: 0 @lateralEdgeMobile;
+  margin-bottom: 435px;
+}
+.lecturers__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.lecturers__list {
+  padding: 0;
+  margin: 0;
+}
+.lecturers__item {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.lecturers__img {
+  background-color: @colorSecond;
+  width: 290px;
+}
+.lecturers__name {
+  display: block;
+  font-family: @fontFamilyBrandBold;
+  font-size: 14px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.lecturers__content {
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+.lecturers__icons {
+  display: none;
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.lecturers {
+  position: relative;
+  padding: 0 @lateralEdgeTablet;
+  margin-bottom: 35px;
+  overflow: hidden;
+
+  &::before {
+    right: -130px;
+    bottom: 160px;
+  }
+
+  &::after {
+    top: 260px;
+    left: 11%;
+  }
+}
+.lecturers__title {
+  margin-bottom: 50px;
+}
+.lecturers__list {
+  max-width: 1030px
+}
+.lecturers__item {
+  display: inline-block;
+  width: 345px;
+  margin-bottom: 45px;
+}
+.lecturers__item:nth-child(odd) {
+  float: left;
+}
+.lecturers__item:nth-child(even) {
+  float: right;
+}
+.lecturers__img {
+  width: 345px;
+}
+.lecturers__name {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 22px;
+}
+.lecturers__content {
+  font-size: 14px;
+  line-height: 24px;
+}
+.lecturers__icons {
+  right: 20.5%;
+  bottom: 320px;
+}
+}
+@media (min-width: @tabletMinWidth) {
+.lecturers {
+  &::before {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 77px solid #f5f5f5;
+    border-radius: 250px;
+    content: "";
+  }
+
+  &::after {
+    background-color: #2429ff;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 20px;
+    content: "";
+  }
+}
+.lecturers__wave-icon {
+  display: block;
+  margin-bottom: 2px;
+}
+.lecturers__icons {
+  display: inline-block;
+  position: absolute;
+}
+}
+@media (min-width: @desktopWidth) {
+.lecturers {
+  position: relative;
+  padding: 0 @lateralEdgeDesktop;
+  margin-bottom: 170px;
+
+  &::before {
+    right: 8%;
+    bottom: 260px;
+    z-index: -1;
+  }
+  &::after {
+    top: 255px;
+    left: 12.5%;
+  }
+}
+.lecturers__title {
+  margin-bottom: 45px;
+}
+.lecturers__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 355px;
+  margin-right: 24px;
+}
+.lecturers__item:nth-last-child(1) {
+  margin-right: 0;
+}
+.lecturers__img {
+  width: 355px;
+}
+.lecturers__name {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 25px;
+}
+.lecturers__content {
+  font-size: 14px;
+  line-height: 24px;
+}
+.lecturers__icons {
+  right: 8%;
+  bottom: 360px;
+}
+}

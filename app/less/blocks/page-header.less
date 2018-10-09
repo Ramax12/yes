@@ -1,0 +1,85 @@
+.page-header {
+  padding: 20px @lateralEdgeMobile;
+}
+.page-header__logo {
+  display: inline-block;
+  margin-top: 5px;
+}
+.page-header__address {
+  display: none;
+}
+.page-header__info {
+  display: inline-block;
+  float: right;
+}
+.page-header__logo-icon {
+  width: 63px;
+  height: 23px;
+}
+.page-header__info-tel,
+.page-header__info-link {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+}
+.page-header__info-tel {
+  color: @colorBrand;
+}
+.page-header__info-link {
+  float: right;
+  padding-bottom: 2px;
+  border-bottom: 2px solid @colorSecond;
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.page-header {
+  padding: 30px @lateralEdgeTablet;
+}
+.page-header__logo {
+  margin-left: -10px;
+}
+.page-header__address,
+.page-header__info-tel,
+.page-header__info-link {
+  font-size: 16px;
+  line-height: 24px;
+}
+.page-header__address {
+  margin: 0;
+  margin-right: 30px;
+}
+.page-header__info-tel {
+  margin-right: 30px;
+}
+}
+@media (min-width: @tabletMinWidth) {
+.page-header__address {
+  display: inline-block;
+  float: left;
+}
+.page-header__info-tel {
+  float: left;
+}
+}
+@media (min-width: @desktopWidth) {
+.page-header {
+  padding: 42px @lateralEdgeDesktop;
+}
+.page-header__logo-icon {
+  width: 100px;
+  height: 37px;
+  margin-top: -15px;
+}
+.page-header__address,
+.page-header__info-tel,
+.page-header__info-link {
+  font-size: 18px;
+}
+.page-header__address {
+  margin: 0;
+  margin-right: 35px;
+}
+.page-header__info-tel {
+  margin-right: 45px;
+}
+}

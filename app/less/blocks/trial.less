@@ -1,0 +1,183 @@
+.trial {
+  position: relative;
+  text-align: center;
+  padding: 0 @lateralEdgeMobile;
+  margin-bottom: 130px;
+}
+.trial__img {
+  width: 290px;
+}
+.trial__wave-icon {
+  position: absolute;
+}
+.trial__wave-icon--top {
+  top: 22px;
+  right: 5%;
+}
+.trial__wave-icon--bottom {
+  top: 165px;
+  left: 5%;
+}
+.trial__circle {
+  background-color: #2429ff;
+  position: absolute;
+  border-radius: 20px;
+}
+.trial__circle--one {
+  width: 10px;
+  height: 10px;
+  top: 67px;
+  right: 6%;
+}
+.trial__circle--two,
+.trial__circle--three {
+  display: none;
+}
+.trial__circle--four {
+  width: 23px;
+  height: 23px;
+  bottom: -60px;
+  left: 13%;
+}
+.trial__title {
+  margin-top: 30px;
+
+  &::after {
+    margin: 0 auto;
+    .underline
+  }
+}
+.trial__content {
+  max-width: 290px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media (min-width: @tabletMinWidth) and (max-width: @tabletMaxWidth) {
+.trial {
+  text-align: left;
+  padding: 0;
+  padding-right: @lateralEdgeTablet;
+  margin-bottom: 110px;
+}
+.trial__wave-icon--top {
+  top: -122px;
+  right: 22.5%;
+}
+.trial__wave-icon--bottom {
+  top: -25px;
+  left: 39.5%;
+}
+.trial__circle--one {
+  top: -55px;
+  right: 15.5%;
+}
+.trial__circle--two {
+  top: -5px;
+  right: 18.5%;
+}
+.trial__circle--three {
+  top: -2px;
+  right: 9%;
+}
+.trial__circle--four {
+  bottom: 5px;
+  left: 46.5%;
+}
+.trial__img {
+  float: left;
+  width: 580px;
+  margin-left: 25px;
+}
+.trial__text-block {
+  float: right;
+  margin-top: 14px;
+  margin-right: 26px;
+}
+.trial__title {
+  margin-bottom: 20px;
+
+  &::after {
+    padding-top: 5px;
+    margin: 0;
+  }
+}
+.trial__content {
+  max-width: 344px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+}
+@media (min-width: @tabletMinWidth) {
+.trial__wave-icon {
+  width: 145px;
+  height: 22px;
+}
+.trial__circle--two {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+}
+.trial__circle--three {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+}
+@media (min-width: @desktopWidth) {
+.trial {
+  text-align: left;
+  padding-right: @lateralEdgeDesktop;
+  margin-bottom: 180px;
+}
+.trial__wave-icon--top {
+  top: -106px;
+  right: 21%;
+}
+.trial__wave-icon--bottom {
+  top: 22px;
+  left: 38.5%;
+}
+.trial__circle--one {
+  top: 38px;
+  right: 19.5%;
+}
+.trial__circle--two {
+  top: 88px;
+  right: 21.5%;
+}
+.trial__circle--three {
+  top: 85px;
+  right: 15%;
+}
+.trial__circle--four {
+  bottom: -40px;
+  left: 36.5%;
+}
+.trial__img {
+  float: left;
+  width: 822px;
+  margin-left: 140px;
+}
+.trial__text-block {
+  float: right;
+  margin-top: 120px;
+  margin-right: 55px;
+}
+.trial__title {
+  margin-bottom: 25px;
+
+  &::after {
+    padding-top: 10px;
+    margin: 0;
+  }
+}
+.trial__content {
+  max-width: 460px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 95px;
+}
+}
